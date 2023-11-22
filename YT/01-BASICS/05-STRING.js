@@ -155,3 +155,10 @@ console.log(`"${toTrim.trimStart()}"`);
 console.log(`"${toTrim.trimEnd()}"`);
 
 //---------------------------------------------------------------
+
+// Using string object as string primitive
+
+const str4 = new String("Name")
+console.log(str4)
+console.log(str4.toString())
+console.log(str4.valueOf())
