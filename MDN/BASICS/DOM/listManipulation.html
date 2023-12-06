@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+    </section>
+    <script>
+        let animals = ["cat","dog","fish","ajdhfj","djfhjhd"];
+        const sect = document.querySelector("section");
+        const uL = document.createElement("ul");
+        for(const animal of animals){
+            const lE = document.createElement("li");
+            lE.textContent = `${animal}`;
+            uL.appendChild(lE);
+        }
+        sect.appendChild(uL);
+    </script>
+</body>
+</html>

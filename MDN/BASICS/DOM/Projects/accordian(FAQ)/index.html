@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(./istockphoto-1417433518-2048x2048.jpg);
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .faq{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .question{
+            width: 600px;
+            border-bottom: 2px solid white;
+        }
+        .reveal{
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .question:hover{
+            opacity: 0.5;
+            border: 1px solid white;
+        }
+        .revealBtn{
+            background-color: transparent;
+            color: white;
+            border: solid white;
+            cursor: pointer;
+        }
+        .hidden{
+            display: none;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <section class="faq">
+        <h1 class="mainHeading">FAQ</h1>
+        <div class="question">
+            <div class="reveal">question1
+                <button class="revealBtn">+</button>
+            </div>
+            <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde blanditiis magnam nisi ut esse sit quidem. Natus, quisquam atque!</div>
+        </div>
+        <div class="question">
+            <div class="reveal">question2
+                <button class="revealBtn">+</button>
+            </div>
+            <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde blanditiis magnam nisi ut esse sit quidem. Natus, quisquam atque!</div>
+        </div>
+        <div class="question">
+            <div class="reveal">question3
+                <button class="revealBtn">+</button>
+            </div>
+            <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde blanditiis magnam nisi ut esse sit quidem. Natus, quisquam atque!</div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

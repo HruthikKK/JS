@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function scope example</title>
+  </head>
+<body>
+    <section>
+
+    </section>
+  <script>
+    const x = 1;
+
+    function a() {
+      const y = 2;
+      output(y);
+    }
+
+    function b() {
+      const z = 3;
+    }
+
+    function output(value) {
+      const para = document.createElement('p');
+      document.body.appendChild(para);
+      para.textContent = `Value: ${value}`;
+    }
+    if(true){
+        let d = 5;
+    }
+
+    // output(x);
+    // a();
+    // output(d);
+
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para2 = document.createElement('p');
+
+    // Add your code here
+    function chooseName(n){
+        return Math.floor(Math.random()*n); 
+    }
+    let f = chooseName(names.length);
+    para2.textContent = names[f];
+
+    // para.textContent = names[chooseName(10)];
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector("section");
+
+    section.innerHTML = ' ';
+
+    section.appendChild(para2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: aquamarine;
+}
+section{
+    height: 100vh;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: #414141;
+}

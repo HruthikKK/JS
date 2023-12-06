@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="input">
+    <input type="submit" id="submit">
+    <p></p>
+    <script>
+        const input = document.querySelector("#input");
+        const para = document.querySelector("p");
+        const submit = document.querySelector("#submit")
+        
+        function f(x){
+            input.value = '';
+            input.focus();
+            if(isNaN(x)){
+                para.textContent = "NaN";
+                return;
+            }
+            const sq = x*x;
+            const cube = x**3;
+            para.textContent = ` sq = ${sq} , cube = ${cube}`;
+        }
+        input.addEventListener("change",() =>{
+            const num = parseFloat(input.value);
+            f(num);
+        });
+    </script>
+</body>
+</html>

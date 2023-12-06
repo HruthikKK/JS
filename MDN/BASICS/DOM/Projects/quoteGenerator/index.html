@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(istockphoto-1417433518-2048x2048.jpg) no-repeat;
+            text-align: center;
+        }
+        .content{
+            width: 400px;
+            height: 300px;
+            border: 4px solid white;
+            margin: 100px auto;
+            padding: 2rem;
+        }
+        .quote{
+            display: block;
+            /* text-align: center; */
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .quote::before,.quote::after{
+            content: "\""; 
+        }
+        .author{
+            color: white;
+            display: block;
+            font-size: 2rem;
+            /* text-align: center; */
+        }
+        .author::before{
+            content: '-';
+        }
+        button{
+            display: block;
+            margin: 2rem auto;
+            background-color: rgb(180, 230, 105);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="quote"></div>
+        <div class="author"></div>
+        <button class="newQ">New Quote</button>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

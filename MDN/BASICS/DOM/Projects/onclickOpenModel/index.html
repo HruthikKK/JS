@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(./istockphoto-1417433518-2048x2048.jpg);
+            width: 100vw;
+            height: 100vh;
+        }
+        .reveal{
+            position: absolute;
+            left: 10%;
+            bottom: 20%;
+            font-size: 1.5rem;
+            
+        }
+        .hidden{
+            color: white;
+            width: 250px;
+            height: 200px;
+            display: none;
+            margin: 300px auto;
+            border: 3px solid white;
+            padding: 1rem;
+        }
+        section{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button class="reveal">Click Here</button>
+        <div class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quaerat dolor, illo ut porro fugit cum eaque dolorum eius ipsa.
+            <button class="close">X</button>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
